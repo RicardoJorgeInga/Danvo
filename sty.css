@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #ecf5f9;
+
+}
+
+.container{
+    padding: 0px 7.5rem;
+    overflow: hidden; /* para corregir el error de margin en el colapso de margenes*/
+    
+    height: 100vh;  /* 1% = 1vh, es recomendable para ocupar todo el alto del navegador*/
+}
+
+.logo-photo{
+    width: 3rem;
+}
+
+h1 a{
+    padding-left: 0.9rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.linkers ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.linkers .linkers__a{
+    margin-right: 4.5rem;
+
+}
+
+.linkers .linkers__a a{
+    display: inline-block;
+    text-decoration: none;
+    color: #646d6e;
+    transition: 0.3s;
+}
+
+.linkers .linkers__a a:hover{
+    color: rgb(3, 6, 47);
+    transform: scale(1.05);
+    
+}
+
+.linkers .linkers__b{
+    background-color: #65aae9;
+    text-align: center;
+    padding: 1.5em 2em;
+    border-radius: 1.3rem;
+    width: 8.5rem;
+   
+}
+
+.linkers .linkers__b a{
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.linkers .linkers__b a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+
+/* HERO BANNER */
+
+.hero-main{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    
+}
+
+.davo-info{
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 1rem;
+    
+}
+
+.davo-info h2{
+    font-size: 2.7rem;
+    margin: 1.25rem 0;
+}
+.davo-info .h2-f{
+    margin-bottom: 0px;
+}
+.davo-info .h2-s{
+    margin-top: 0.5rem;
+}
+
+.davo-info p{
+    color: #646d6e;;
+}
+
+.one,.two{
+    margin-top: 1rem;
+}
+
+.btn{
+    background-color: #65aae9;
+    padding: 1.25rem 0px;
+    border-radius: 1rem;
+    text-align: center;
+    width: 7.5rem;
+    margin-top: 2.5rem;
+
+}
+
+.davo-info a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.davo-info a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+.davo-person{
+    width: 37rem;
+}
+
+.davo-person img{
+    max-width: 123%;
+    transform: translate(15%);
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .hero-top{
+        flex-direction: column;
+        font-size: rem;
+    }
+    
+    .hero-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .davo-info{
+        
+        position: static;
+        width: 100%;
+        text-align: center;
+        height: 23rem;
+        
+    }
+    .davo-person{
+        position: static;
+        width: 70%;
+        height: 100%;
+        
+    }
+    .btn{
+        
+        align-self: center;
+        padding: 1.25rem 0px;
+        
+    }
+
+    .davo-person img{
+        width: 50%;
+        transform: translate(0%);
+        text-align: center;
+    }
+
+    .davo-person{
+        
+        text-align: center;
+        align-self: center;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:690px){
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 0rem 3rem;
+    }
+    
+    .linkers ul{
+        padding: 0%;
+    }
+    
+    .linkers .linkers__a{
+        
+        margin-right: 2rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width:690px){
+    .container{
+        height: 100%;
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    .logo{
+        padding-bottom: .6rem;
+    }
+
+    .logo .logo-text, .logo .logo-photo{
+        font-size: 1.5rem;
+    }
+
+    .davo-info h2{
+        font-size: 1.8rem;
+    }
+
+    .hero-main{
+        height: 100%;
+    }
+
+    .linkers ul{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin: 0px 0px;
+    }
+
+    .linkers .linkers__a{
+        margin-bottom: 1.3rem;
+        margin-right: 0%;
+        margin-top: 1.3rem;
+    }
+
+    .linkers .linkers__b{
+        margin-bottom: 10px;
+    }
+
+    
+
+    .hero-main .davo-info{
+        height: 100%;
+
+    }
+
+    
+
+    .hero-main .davo-person img{
+        margin: 1.25rem 0px;
+        width: 100%;
+    
+    }
+
+
+}
